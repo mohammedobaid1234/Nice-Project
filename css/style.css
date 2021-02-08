@@ -1,0 +1,409 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+.head,
+.OurServices,
+.ourTeam,
+.tran,
+.Projects,
+footer{
+    min-width: 1200px;
+}
+.clearFix{
+    clear: both;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+header{
+    height: 0;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+header .logo{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    
+}
+header nav{
+    float: left;
+    width: 50%;
+    font-size: 18px;
+}
+header nav ul{
+    list-style: none;
+}
+header nav li {
+    display: inline-block;
+    padding: 10px 0px;
+    margin:0 10px;
+    text-transform: uppercase;
+    margin-top:20px ;
+    border-bottom: 2px solid #1ABC9C transparent ;
+}
+header nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+header nav li.active,
+header nav li:hover{
+    color: #1ABC9C;
+    border-bottom: 2px solid #1ABC9C;
+} 
+
+.head{
+  background-image: url(../imges/aerial-hero-img-1920x1275-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.head .overlay{
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    z-index: 2;
+   
+}
+.slider{
+    color: #fff;
+    height: 100%;
+    width: 100%;
+}
+.slider .sli{
+    padding: 10px;
+}
+.slider .sli h2{
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.slider .sli h2 span{
+    color: #1ABC9C;
+}
+.slider .sli p{
+    font-size: 18px;
+    font-weight: normal;
+}
+.bx-wrapper{
+    border:none;
+    background: none;
+    box-shadow: none;
+    height: 100%;
+}
+.bx-viewport{
+    height: 100% !important;
+    text-align: center;
+}
+.OurServices{
+   
+    padding-top: 50px;
+    margin-top: 30px;
+  
+}
+.container > h2{
+   font-weight: normal;
+   margin-bottom: 60px;
+   
+}
+.special-content{
+    position: relative;
+}
+.special-content:after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    left: 2px;
+    top: 30px;
+    border-bottom: 2px solid #333;
+    
+}
+.internal{
+      width: 30%;
+      float: left;
+      margin: 10px;
+    
+}
+.internal div:first-child{
+    width: 30%;
+    float: left;
+    margin-left: 20px;
+    height: 150px;
+}
+
+.internal div h2{
+    margin-bottom: 10px;
+    color: #585353;
+    font-weight: normal;
+}
+.internal div p{
+    color: #888;
+}
+svg{
+    color: #1ABC9C;
+}
+.internal div:last-child{
+    width: 60%;
+    float: left;
+}
+hr{
+    border: 1px solid #EEE;
+    margin: 70px 0;
+}
+section.ourTeam{
+    margin-top: 0;
+}
+.box{
+    float: left;
+}
+.box:first-child{
+    width: 35%;
+    float: left;
+    font-weight: normal;
+ 
+}
+.box:not(:first-child){
+    width: 15.25%;
+    margin-left: 1%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.box:not(:first-child) img{
+   width: 100%;
+
+}
+.box:not(:first-child) .overlay{
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #1ABC9C;
+     line-height: 183px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 20px;
+     color: #fff;
+    display: none;
+
+}
+.box:not(:first-child):hover .overlay{
+    display: block;
+    opacity: .9;
+}
+.box:first-child p{
+   margin-top: 20px;
+   color: #888;
+}
+
+section.tran{
+    margin-top: 70px;
+    height: 400px;
+    background-image: url(../imges/transs.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+}
+
+section.tran .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1;
+    color: #fff;
+    
+}
+section.tran h2{
+    padding: 20px;
+    margin: 50px;
+    font-size: 40px;
+}
+section.tran p{
+    line-height: 35px;
+    font-size: 20px;
+    color: #ccc;
+}
+section.tran h3{
+    padding: 10px;
+    color: #1ABC9C;
+    width: 15%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: normal;
+}
+section.tran .slide > div{
+    display: none;
+}
+section.tran .slide .active{
+    display: block;
+}
+.Projects{
+    margin-top: 70px;
+}
+.Projects h2{
+    margin-bottom: 40px;
+}
+.Projects ul{
+    margin: 0;
+    list-style: none;
+}
+.Projects ul li{
+    padding: 10px ;
+   display: inline-block;
+    color: #888;
+    font-size: 18px;
+    margin-right: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.Projects ul li.active{
+    background-color: #1ABC9C;
+   border-color: #1ABC9C;
+   color: #fff;
+}
+.gallery .row div{
+    position: relative;
+}
+.gallery .row:first-child {
+    margin-top: 50px;
+}
+.gallery .row:last-child{
+    margin-top: 10px;
+}
+.gallery .row div{
+    width: 30%;
+    display: inline-block;
+    margin-left: 10px;
+
+}
+.gallery .row img{
+width: 100%;
+margin-left: 10px;
+}
+
+.gallery .row div .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #1ABC9C;
+    opacity: .8;
+    display: none;
+    overflow: hidden;
+
+}
+.gallery .row div span svg{
+    color: #fff;
+}
+.gallery .row div span{
+    position: relative;
+    top: 85%;
+    left: 85%;
+    color: #FFF;
+}
+
+.gallery .row div:hover .overlay{
+    display: block;
+    
+}
+.gallery .mix{
+    display: none;
+}
+footer{
+    padding-top: 40px;
+    background-color: #232323;
+    color: #fff;
+    height: 400px;
+    margin-top: 80px;
+}
+footer .bef .col{
+      width: 25%;
+      float: left;
+}
+.bef .col h2{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.bef .col:nth-child(2) span{
+    color: #ccc;
+    display: inline-block;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.bef .col p{
+    color: #6C6C6C;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.bef .col i{
+    display: inline-block;
+    padding: 10px;
+    width: 40px !important;
+}
+.bef .col svg{
+    color: #979797;
+    border: 1px solid #979797;
+}
+footer .copyRight{
+    margin-top: 30px;
+    color: #979797;
+}
+
+.fl img{
+   margin-right: 10px;
+    float: left;
+}
+.fl h3{
+    font-weight: normal;
+    font-size: 17px;
+    color: #C5C5C5;
+    padding-top:8px ;
+}
+.fl span{
+    display: inline-block;
+  margin-top: 5px;
+  color: #6C6C6C;
+}
+.fl {
+    margin-bottom: 20px;
+}
+.col:nth-child(4) ul{
+    list-style: none;
+    
+}
+.col:nth-child(4) ul li{
+    margin:0 0 10px 15px;
+    padding: 10px;
+    border-bottom: 1px solid #c5c5c5;
+}
